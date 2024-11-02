@@ -1,4 +1,4 @@
-- (Chained) Freestyle Jobs
+- (Chained) Freestyle Jobs (UI-based configuration)
 - Pipeline Jobs (scripting - pipeline as code)
 - Multibranch Pipeline Jobs
 
