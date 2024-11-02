@@ -1,5 +1,5 @@
 - (Chained) Freestyle Jobs
-- Pipeline Jobs
+- Pipeline Jobs (scripting - pipeline as code)
 - Multibranch Pipeline Jobs
 
 | Feature                | Freestyle Job         | Pipeline Job              | Multibranch Pipeline Job             |
