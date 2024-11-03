@@ -1,8 +1,8 @@
 - (Chained) Freestyle Jobs (UI-based configuration) multiple jobs(like stages in pipeline jobs) chained together
 - Pipeline Jobs (scripting - pipeline as code) one job with stages, each stage can have multiple steps
   - pipeline syntax:
-     - scripted (advanced scripting capabilities, high flexibility)
-     - declarative (easy to start, has pre-defined structure)
+     - scripted (original pipeline syntax, advanced scripting capabilities, high flexibility, uses Groovy syntax)
+     - declarative (introduced to simplify pipeline creation, easy to start, has pre-defined structure, uses Groovy syntax)
 - Multibranch Pipeline Jobs
 
 | Feature                | Freestyle Job         | Pipeline Job              | Multibranch Pipeline Job             |
