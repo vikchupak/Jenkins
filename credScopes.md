@@ -1,0 +1,3 @@
+- global
+- system (only accessed by admins, not visible by jobs)
+- multibranch pipeline (visible only by multibranch pipeline)
