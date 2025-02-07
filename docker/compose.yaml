@@ -1,0 +1,21 @@
+volumes:
+  jenkins_home:
+    name: jenkins_home
+
+services:
+  jenkins:
+    # docker pull jenkins/jenkins:lts-jdk17 => Jenkins with Docker pre-installed
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    hostname: jenkins
+    ports:
+      # HTTP management UI
+      - "8080:8080"
+      # For communication between master and worker nodes
+      # when jenkins runs as a cluster
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+
+# Print initPassword
+# sudo cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
