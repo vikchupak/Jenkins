@@ -1,4 +1,4 @@
-- (Chained) Freestyle Jobs (UI-based configuration) multiple jobs(like stages in pipeline jobs) chained together
+- (Chained) Freestyle Jobs (UI-based configuration) multiple jobs(like stages in pipeline jobs) **chained** together
 - Pipeline Jobs (scripting - pipeline as code) one job with stages, each stage can have multiple steps
   - Jenkinsfile using Groovy:
     - pipeline syntax:
