@@ -1,9 +1,9 @@
-- (Chained) Freestyle Jobs (UI-based configuration) multiple jobs(like stages in pipeline jobs) **chained** together
-- Pipeline Jobs (scripting - pipeline as code) one job with stages, each stage can have multiple steps
+- (Chained) **Freestyle Jobs** (UI-based configuration) multiple jobs(like stages in pipeline jobs) **chained** together
+- **Pipeline Jobs** (scripting - pipeline as code) one job with stages, each stage can have multiple steps
   - Jenkinsfile using Groovy:
     - pipeline syntax:
-      - scripted (original pipeline syntax, advanced scripting capabilities, high flexibility, uses Groovy syntax)
-      - declarative (introduced to simplify pipeline creation, easy to start, has pre-defined structure, uses Groovy syntax)
+      - **scripted** (original pipeline syntax, advanced scripting capabilities, high flexibility, uses Groovy syntax)
+      - **declarative** (introduced to simplify pipeline creation, easy to start, has pre-defined structure, uses Groovy syntax)
         - *In declarative pipeline, you must specify an agent(it's mandatory). We can set `agent any` when not really using agents.*
 - Multibranch Pipeline Jobs
   - ALL baranches should have its own pipeline. A pipeline is created per a branch.
