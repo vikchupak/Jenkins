@@ -4,7 +4,7 @@
     - pipeline syntax:
       - scripted (original pipeline syntax, advanced scripting capabilities, high flexibility, uses Groovy syntax)
       - declarative (introduced to simplify pipeline creation, easy to start, has pre-defined structure, uses Groovy syntax)
-        - In declarative pipeline, you must to specify an agent(it's mandatory). We can set `agent any` when not really using agents.
+        - In declarative pipeline, you must specify an agent(it's mandatory). We can set `agent any` when not really using agents.
 - Multibranch Pipeline Jobs
   - ALL baranches should have its own pipeline. A pipeline is created per a branch.
   - We need stages/steps common for all branches, like run tests, but skip deploy (Jenkins looks for a Jenkinsfile in a spesific branch and builds a pipeline for the branch based on it. But we can store Jenkinsfile in master branch and all other branches fork from it, will have the same Jenkinsfile. We can use conditions inside Jenkinsfile to skip some stages/steps based on branch name `BRANCH_NAME` - var avaliable only in Multibranch Pipeline. Pipelines are only build for branches that match regexp in Jenkins configuration)
