@@ -1,5 +1,18 @@
+pipeline => stages => steps
+
 - (Chained) **Freestyle Jobs** (UI-based configuration) multiple jobs(like stages in pipeline jobs) **chained** together
-- **Pipeline Jobs** (scripting - pipeline as code) one job with stages, each stage can have multiple steps
+  - The weakest king of a job with a lot of limitations
+    - UI based, no scripting
+    - Limited to functionality that plugins provide
+  - Common practice to have a job for each step, and chaine them in order using post-build actions
+    - step1/job1 - run tests, post-build action trigers step2/job2
+    - step2/job2 - build jar, post-build action trigers step3/job3
+    - step3/job3 - build image, post-build action trigers step4/job4
+    - step4/job4 - push to repo
+- **Pipeline Jobs** (**scripting - pipeline as code**) one job with stages, each stage can have multiple steps
+  - 2 ways to keep/save scripts
+    - Inside jenkins as a **Pipeline script**
+    - Inside repository as a **Pipeline script from SCM(source code management)** in Jenkinsfile (**recommended**)
   - Jenkinsfile using Groovy:
     - pipeline syntax:
       - **scripted** (original pipeline syntax, advanced scripting capabilities, high flexibility, uses Groovy syntax)
