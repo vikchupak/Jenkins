@@ -68,7 +68,8 @@ pipeline => stages => steps
           - load scripts using `script`
 - Multibranch Pipeline Jobs
   - ALL baranches should have its own pipeline. A pipeline is created per a branch.
-  - We need stages/steps common for all branches, like run tests, but skip deploy (Jenkins looks for a Jenkinsfile in a spesific branch and builds a pipeline for the branch based on it. But we can store Jenkinsfile in master branch and all other branches fork from it, will have the same Jenkinsfile. We can use conditions inside Jenkinsfile to skip some stages/steps based on branch name `BRANCH_NAME` - var avaliable only in Multibranch Pipeline. Pipelines are only build for branches that match regexp in Jenkins configuration)
+  - Each branch must have Jenkinsfile to build the branch pipeline based on it. Otherwise, the branch pipeline won't be created. 
+  - We need stages/steps common for all branches, like run tests, but skip deploy. We can store Jenkinsfile in master branch and all other branches fork from it, will have the same Jenkinsfile. We can use conditions inside Jenkinsfile to skip some stages/steps based on branch name `BRANCH_NAME` - var avaliable only in Multibranch Pipeline. Pipelines are only build for branches that match regexp in Jenkins configuration.
   - We need some branch-specific stages/steps for some branches, like master to include deploy.
 
 | Feature                | Freestyle Job         | Pipeline Job              | Multibranch Pipeline Job             |
