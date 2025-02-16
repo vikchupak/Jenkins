@@ -5,7 +5,7 @@
 - **Written in groovy**
 - Reference shared logic in Jenkinsfile
 
-### repo/project structure
+### Shared lib repo/project structure
 
 - `vars` folder
   - Functions that we call from Jenkinsfile
