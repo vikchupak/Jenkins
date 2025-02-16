@@ -1,4 +1,4 @@
-### Used for reusability.
+### Used for reusability
 
 - Extension to the pipeline
 - **Has own repository**
