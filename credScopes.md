@@ -1,3 +1,3 @@
-- global
-- system (only accessed by admins, not visible by jobs)
-- multibranch pipeline | project (visible only by multibranch pipeline). The project because multibranch pipeline is per repo.
+- global (accessible everywhere)
+- system (only accessed by admins, **not visible by jobs**)
+- project (only for multibranch pipeline, **visible only by multibranch pipeline**)
