@@ -4,6 +4,7 @@ pipeline => stages => steps
   - The weakest king of a job with a lot of limitations
     - UI based, no scripting
     - Limited to functionality that plugins provide
+    - Each job requires plugins setup even if the plugins are the same
   - Common practice to have a job for each step, and chaine them in order using post-build actions
     - step1/job1 - run tests, post-build action trigers step2/job2
     - step2/job2 - build jar, post-build action trigers step3/job3
