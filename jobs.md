@@ -12,12 +12,26 @@ pipeline => stages => steps
     - step4/job4 - push to repo
   - *Here a step is more like a stage in Pipeline jobs*
 - **Pipeline Jobs** (**scripting - pipeline as code**) one job with stages, each stage can have multiple steps
+  - We can think of a pipeline job like superset of freestyle jobs
   - 2 ways to keep/save scripts
     - Inside jenkins as a **Pipeline script**
     - Inside repository as a **Pipeline script from SCM(source code management)** in Jenkinsfile (**recommended**)
   - Jenkinsfile using Groovy:
     - pipeline syntax:
       - **scripted** (original pipeline syntax, advanced scripting capabilities, high flexibility, uses Groovy syntax)
+        ```groovy
+        node { // required
+            stage('Build') {
+                echo 'Building...'
+            }
+            stage('Test') {
+                echo 'Testing...'
+            }
+            stage('Deploy') {
+                echo 'Deploying...'
+            }
+        }
+        ```
       - **declarative** (introduced to simplify pipeline creation, easy to start, has pre-defined structure, uses Groovy syntax)
         - *In declarative pipeline, you must specify an agent(it's mandatory). We can set `agent any` when not really using agents.*
         ```groovy
