@@ -9,6 +9,7 @@ pipeline => stages => steps
     - step2/job2 - build jar, post-build action trigers step3/job3
     - step3/job3 - build image, post-build action trigers step4/job4
     - step4/job4 - push to repo
+  - *Here a step is more like a stage in Pipeline jobs*
 - **Pipeline Jobs** (**scripting - pipeline as code**) one job with stages, each stage can have multiple steps
   - 2 ways to keep/save scripts
     - Inside jenkins as a **Pipeline script**
